@@ -64,3 +64,7 @@ test("adding floating numbers ", () => {
 test("there is no I in team", () => {
   expect("team").not.toMatch(/I/);
 });
+test("compiling android goes as expected", () => {
+  expect(functions.compileAndroidCode).toThrow();
+  expect(functions.compileAndroidCode).toThrow(/JDK/);
+});
