@@ -68,3 +68,11 @@ test("compiling android goes as expected", () => {
   expect(functions.compileAndroidCode).toThrow();
   expect(functions.compileAndroidCode).toThrow(/JDK/);
 });
+
+// test arrays
+
+test("the shopping list has beer on it", () => {
+  const shoppingList = ["nappies", "toilet roll", "bin bags", "beer"];
+  expect(shoppingList).toContain("beer");
+  expect(new Set(shoppingList)).toContain("beer");
+});
