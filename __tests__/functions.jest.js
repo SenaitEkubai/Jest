@@ -59,3 +59,8 @@ test("adding floating numbers ", () => {
   const value = 0.1 + 0.2;
   expect(value).toBeCloseTo(0.3);
 });
+
+// test for strings
+test("there is no I in team", () => {
+  expect("team").not.toMatch(/I/);
+});
